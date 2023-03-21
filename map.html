@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <h1>Map Function</h1>
+    <script>
+        const person =[
+            {name:"A", age:23, lastname: "Mane"},
+            {name:"B", age:24, lastname: "Mane"},
+            {name:"C", age:25, lastname: "Mane"},
+        ]
+        // person.forEach(a => {
+        //     console.log(a.name);
+        // });
+
+        const age = person.map(function(person){
+            console.log(person.name);
+        })
+    </script>
+</body>
+</html>

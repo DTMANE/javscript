@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+<body>
+    <H1>Find Method</H1>
+    <Script>
+        const arr = [
+            { name : "Dinesh", lastName:"Mane", age : 25},
+            { name : "Dine", lastName:"Mane", age : 23},
+            { name : "Dsh", lastName:"Mane", age : 25},
+        ]
+        const newObj = arr.find(function(a){
+            return a.name === "Dinesh";
+        });
+        console.log(newObj);
+    </Script>
+</body>
+</html>
