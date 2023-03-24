@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent</title>
+</head>
+<body>
+    <h1>Mouse Event</h1>
+    <h2 class="click">click effect</h2>
+    <h2 class="onmousedown">Mouse down (after pressing button effect)</h2>
+    <h2 class="onmouseup">mouse up (after release button )</h2>
+    <h2 class="mouseenter">mouseenter/mouseleave</h2>
+    <h2 class="mouseleave">mouseleave</h2>
+    <button class="btn">Click here</button>
+    <script>
+        const click = document.querySelector('.click');
+        const onmousedown = document.querySelector('.onmousedown');
+        const onmouseup = document.querySelector('.onmouseup');
+        const mouseenter = document.querySelector('.mouseenter');
+        const mouseleave = document.querySelector('.mouseleave');
+
+        click.addEventListener('click',function(){
+            click.style.color="red";
+        });
+        onmousedown.addEventListener('mousedown',function(){
+            onmousedown.style.color="blue";
+
+        });
+        onmouseup.addEventListener('mouseup',function(){
+            onmouseup.style.color="red";
+        });
+        mouseenter.addEventListener('mouseenter',function(){
+            mouseenter.style.color="red";
+        });
+        mouseleave.addEventListener('mouseleave',function(){
+            mouseenter.style.color="blue";
+        });
+
+    </script>
+</body>
+</html>
